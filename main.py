@@ -10,11 +10,11 @@ app = Flask(__name__)
 @app.route("/")
 def root():
     # Set time period
-    start = datetime(2018, 1, 1)
-    end = datetime(2018, 12, 31)
+    start = datetime(2022, 1, 1)
+    end = datetime(2022, 12, 31)
 
-    # Create Point for Vancouver, BC
-    location = Point(49.2497, -123.1193, 70)
+    # Create Point for San Antonio, TX
+    location = Point(29.4252, 98.4946, 28.1112)
 
     # Get daily data for 2018
     data = Daily(location, start, end)
