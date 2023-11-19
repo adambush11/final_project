@@ -14,7 +14,7 @@ def root():
     end = datetime(2022, 12, 31)
 
     # Create Point for San Antonio, TX
-    location = Point(29.4252, 98.4946, 28.1112)
+    location = Point(29.4252, -98.4946, 28)
 
     # Get daily data for 2018
     data = Daily(location, start, end)
